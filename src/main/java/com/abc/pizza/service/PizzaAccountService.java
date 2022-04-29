@@ -2,6 +2,7 @@ package com.abc.pizza.service;
 
 
 import java.util.List;
+import com.abc.pizza.entity.*;
 
 import org.springframework.stereotype.Service;
 
@@ -18,11 +19,8 @@ public interface PizzaAccountService
 	public String login(String username,String password) throws InvalidUserException;
 
 	public boolean logout(String username);
-	public List<PizzaAccount> getAllPizza();
 	
 	public boolean insertPizzaAccount(PizzaAccount a);
 	public PizzaAccount getPizzaAccount(int pId);
 	public List<PizzaAccount> getallpizzaslist();
-
-	
 }

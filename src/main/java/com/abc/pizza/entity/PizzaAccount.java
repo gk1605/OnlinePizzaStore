@@ -13,10 +13,10 @@ public class PizzaAccount implements Comparable<PizzaAccount>
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int pizzaId;
-	private String pizzaName;
+	public int pizzaId;
+	public String pizzaName;
 	//private String pizzaType;
-	private int pizzaAmount;
+	public int pizzaAmount;
 	public PizzaAccount() {
 		super();
 		// TODO Auto-generated constructor stub

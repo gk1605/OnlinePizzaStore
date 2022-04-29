@@ -5,15 +5,12 @@ import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.abc.pizza.entity.*;
+import com.abc.pizza.entity.PizzaAccount;
 import com.abc.pizza.entity.OrderTransactions;
 import com.abc.pizza.entity.PizzaAccount;
 import com.abc.pizza.exceptions.InvalidPizzaException;
 import com.abc.pizza.exceptions.InvalidUserException;
 import com.abc.pizza.repository.PizzaAccountRepository;
-
-import com.abc.pizza.service.PizzaAccountService;
-
 @Service
 public class PizzaAccountServiceImpl implements PizzaAccountService{
 	
@@ -37,11 +34,6 @@ public class PizzaAccountServiceImpl implements PizzaAccountService{
 		return false;
 	}
 
-	@Override
-	public List<PizzaAccount> getAllPizza() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public boolean insertPizzaAccount(PizzaAccount a) {
