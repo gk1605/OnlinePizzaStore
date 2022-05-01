@@ -8,6 +8,7 @@ import com.abc.pizza.entity.OrderTransactions;
 
 @Service
 public interface OrderTransactionService {
-	public List<OrderTransactions>getallBookingTransactions();
+	public List<OrderTransactions> getallBookingTransactions();
+
 
 }

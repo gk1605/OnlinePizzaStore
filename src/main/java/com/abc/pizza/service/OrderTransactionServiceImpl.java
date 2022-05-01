@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.abc.pizza.entity.OrderTransactions;
 import com.abc.pizza.repository.OrderTransactionRepository;
-
+import com.abc.pizza.entity.*;
 
 
 @Service

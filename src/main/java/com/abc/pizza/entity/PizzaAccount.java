@@ -1,12 +1,14 @@
 package com.abc.pizza.entity;
 
+import javax.persistence.*;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
-import com.abc.pizza.entity.PizzaAccount;
+import com.abc.pizza.entity.*;
 
 @Entity
 public class PizzaAccount implements Comparable<PizzaAccount>
@@ -17,6 +19,7 @@ public class PizzaAccount implements Comparable<PizzaAccount>
 	public String pizzaName;
 	//private String pizzaType;
 	public int pizzaAmount;
+	
 	public PizzaAccount() {
 		super();
 		// TODO Auto-generated constructor stub
